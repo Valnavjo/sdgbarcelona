@@ -20,5 +20,14 @@
 		<members>*</members>
 		<name>StaticResource</name>
 	</types>
-	<version>31.0</version>
+    <types>
+        <members>MeetupEventDetails</members>
+        <members>MeetupEventList</members>
+        <members>MeetupEventSearchBar</members>
+        <members>MeetupEventSearchKeyChange</members>
+        <members>MeetupLightning</members>
+        <members>MeetupLightningMaster</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+	<version>34.0</version>
 </Package>
