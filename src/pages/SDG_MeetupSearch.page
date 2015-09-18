@@ -1,3 +1,10 @@
-<apex:page showHeader="true" sidebar="true">
+<!--
+ * @name            SDG_MeetupSearch.page
+ * @author          Clapps - tech@clappsolutions.com - www.clappsolutions.com
+ * @date            19 June 2015
+ * @description     This page lists all meetups nearby.
+ * @Revision 		
+-->
+<apex:page showHeader="true" sidebar="false" controller="SDG_CtrlMeetupSearch">
 	
 </apex:page>

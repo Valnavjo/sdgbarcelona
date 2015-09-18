@@ -6,13 +6,13 @@
 *                   - Controller class must have the same name of the VF page.
 * @Revision     
 **********************************************************************************/
-public with sharing class SDG_ControllerMeetupSearch {
+public with sharing class SDG_CtrlMeetupSearch {
 
 	//-- CONSTRUCTOR
 	/**
 	 * Default constructor.
 	 */
-    public SDG_ControllerMeetupSearch() {
+    public SDG_CtrlMeetupSearch() {
         
     }
 }

@@ -1,0 +1,8 @@
+<aura:documentation>
+	<aura:description>
+    	Lightning Meetup app created for SDG Barcelona. This is for the developers!
+    </aura:description>
+	<aura:example name="MeetupLightningMaster" ref="sdgbarcelona:MeetupLightningMaster" label="MeetupLightningMaster">
+		This is the main Lightning component created in order to be able to add the app as a Salesforce1 tab.
+	</aura:example>
+</aura:documentation>

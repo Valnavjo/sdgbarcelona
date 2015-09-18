@@ -1,0 +1,5 @@
+<design:component label="Meetup">
+    <design:attribute name="meetupTitle" label="Title" />
+    <design:attribute name="meetupType" label="Type" datasource="Dev,Admin,TA" />
+	<design:attribute name="meetupTag" label="Tag" datasource="Apex,Lightning,Visualforce" />
+</design:component>

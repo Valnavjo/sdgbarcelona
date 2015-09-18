@@ -1,0 +1,15 @@
+<aura:component controller="SDG_CtrlMeetupLightning">
+
+    <aura:attribute name="meetupEvent" type="String" />
+	<aura:attribute name="meetupEvents" type="String" />
+    <aura:handler event="aura:locationChange" action="{!c.locationChange}"/>
+
+    <div class="details">
+        <h1>{!v.meetupEvent.name}</h1>
+        <h3>{!v.meetupEvent.status}</h3>
+        <h3>{!v.meetupEvent.venue.name}</h3>
+		<h3>{!v.meetupEvent.venue.address_1}&nbsp;{!v.meetupEvent.venue.city}</h3>
+        <p><aura:unescapedHtml value="{!v.meetupEvent.description}" /></p>
+    </div>
+
+</aura:component>

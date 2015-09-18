@@ -1,0 +1,18 @@
+<aura:component controller="SDG_CtrlMeetupLightning">
+
+	<aura:attribute name="meetupGroup" type="String"/>
+    <aura:attribute name="meetupEvents" type="String"/>
+	<aura:handler event="c:MeetupEventSearchKeyChange" action="{!c.searchKeyChange}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <ul class="list-group">
+        <aura:iteration items="{!v.meetupEvents}" var="meetupEvent">
+            <li class="list-group-item">
+                <a href="{! '#meetupevent/' + meetupEvent.id }">
+                    <p>{!meetupEvent.name}</p>
+                    <p>{!meetupEvent.timex}</p>
+                </a>
+            </li>
+        </aura:iteration>
+    </ul>
+</aura:component>

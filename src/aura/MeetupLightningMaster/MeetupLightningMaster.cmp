@@ -1,0 +1,37 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <aura:attribute name="meetupGroup" type="String" />
+	<aura:attribute name="meetupEvents" type="String" />
+    
+    <aura:attribute name="meetupTitle" type="String" />
+	<aura:attribute name="meetupType" type="String" />
+	<aura:attribute name="meetupTag" type="String" />
+
+	<ltng:require styles="/resource/bootstrap/" />
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <aura:renderIf isTrue="{!v.meetupTitle != null}">
+	                    {!v.meetupTitle}
+						<aura:set attribute="else">
+							{!v.meetupGroup.name}
+                        </aura:set>
+                    </aura:renderIf>
+               	</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <c:MeetupEventSearchBar />
+                <c:MeetupEventList meetupGroup="{!v.meetupGroup}" meetupEvents="{!v.meetupEvents}" />
+            </div>
+			<div class="col-sm-8">
+            	<c:MeetupEventDetails meetupEvents="{!v.meetupEvents}" />
+        	</div>
+        </div>
+    </div>
+</aura:component>

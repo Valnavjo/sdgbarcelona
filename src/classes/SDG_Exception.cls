@@ -16,4 +16,9 @@ public class SDG_Exception extends Exception {
      * Custom exception for DtoMeetup unexpected situations.
      */
     public class DtoMeetupException extends Exception {}
+
+    /**
+     * Custom exception for ServiceRestMeetup unexpected situations.
+     */
+    public class RestMeetupException extends Exception {}
 }

@@ -16,10 +16,18 @@ public interface SDG_ServiceMeetup {
 
     //-- SERVICE METHODS
     /**
-     * Finds a Meetup.
+     * Finds a Meetup Group.
      * 
-     * @param {@code String} meetupId
-     * @return {@code SDG_DtoMeetup.Meetup} 
+     * @param {@code String} urlname
+     * @return {@code SDG_DtoMeetup.GroupResult} 
      */
-    SDG_DtoMeetup.Meetup findMeetup(final String meetupId);
+    SDG_DtoMeetup.GroupResult findGroup(final String urlname);
+
+    /**
+     * Finds a Meetup Events.
+     * 
+     * @param {@code String} groupId
+     * @return {@code SDG_DtoMeetup.EventResult} 
+     */
+	SDG_DtoMeetup.EventResult findEvents(final String groupId);
 }
